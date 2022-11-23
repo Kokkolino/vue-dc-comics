@@ -2,7 +2,7 @@
     <div>
         <!-- main footer -->
         <section id="mainFooter">
-            <div class="container-70">
+            <div class="container-70 flex-bw f-wrap">
                 <section id="lists" class="f-wrap">
                     <ul>
                         <h2>DC COMICS</h2>
@@ -43,15 +43,22 @@
                     </ul>
 
                 </section>
-                <section>
-
+                <section id="bg-logo">
+                    
                 </section>
             </div>
         </section>
         <!-- bottom footer -->
-        <section id="bottom" class="height-row">
-
-        </section>
+        <div id="bottom">
+            <div class="container-70">
+                <section>
+                    <button>SIGN-UP NOW</button>
+                </section>
+                <section>
+                    asd
+                </section>                
+            </div>
+        </div>
     </div>
 </template>
 
@@ -66,18 +73,33 @@
     @import "../assets/style/var.scss"; 
 
     div{
-        height: calc(100% - ($hm + ($hs * 3)));
+        height: calc(100% - ($hm + ($hs * 2)));
     }
 
     #mainFooter{
-        height: 100%;
+        height:calc(100% - $hs );
         background-image: url("../assets/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     #bottom{
+        position: fixed bottom;
         background-color: rgb(24, 22, 22);
+        height: $hs;
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            section{
+                
+                button{
+                    padding: 15px;
+                    background: none;
+                    border: 2px solid blue;
+                }
+            }
+        }
     }
 
     h2{

@@ -50,6 +50,7 @@
 <style scoped lang="scss">
   div{
     background-color: white;
+    z-index: 2;
   }
 
   nav{

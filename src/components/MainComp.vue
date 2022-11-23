@@ -55,6 +55,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     @import "../assets/style/var.scss";
+
+    div{
+        z-index: 1;
+    }
     .bg-black{
         background-color: black;
     }
