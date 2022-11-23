@@ -9,7 +9,7 @@
         <!-- blue section -->
         <section class="bg-blue">
             <div class="container-70 flex-bw h-100">
-                <ul>
+                <ul class="horizontal-ul">
                     <li>
                         <img src="../assets/buy-comics-digital-comics.png" alt="">
                         <span>
@@ -54,13 +54,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    @import "../assets/style/var.scss";
     .bg-black{
         background-color: black;
-        
     }
 
+
     .bg-blue{
-        height: 150px;
+        height: $hm;
         background-color: rgb(44, 160, 255);
     }
 

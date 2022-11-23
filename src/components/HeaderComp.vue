@@ -1,10 +1,10 @@
 <template>
-  <div >
+  <div>
     <nav class="height-row flex-bw container-70">
       <!-- logo -->
       <img src="../assets/dc-logo.png" alt="">
       <!-- nav btn -->
-      <ul>
+      <ul class="horizontal-ul">
         <li>
           CHARACTERS
         </li>

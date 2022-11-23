@@ -22,12 +22,15 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "./assets/style/var.scss";
+
   #app {
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
+    height: 100vh;
+    width: 100%;
   }
 
   *{
@@ -38,13 +41,17 @@ export default {
   }
 
   .height-row{
-    height: 120px;
+    height: $hs;
   }
 
   .flex-bw{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .f-wrap{
+    flex-wrap: wrap;
   }
 
   .flex-align{
@@ -59,6 +66,9 @@ export default {
 
   ul{
     list-style: none;
+  }
+
+  .horizontal-ul{
     display: flex;
   }
 
