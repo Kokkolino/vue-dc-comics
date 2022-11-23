@@ -1,6 +1,6 @@
 <template>
   <div >
-    <nav class="height-row flex-bw">
+    <nav class="height-row flex-bw container-70">
       <!-- logo -->
       <img src="../assets/dc-logo.png" alt="">
       <!-- nav btn -->
@@ -53,17 +53,13 @@
   }
 
   nav{
-    width: 70%;
     margin: auto;
-  }
-
-  ul{
-    display: flex;
   }
   
   li{
     margin: 0 15px;
     font-size: 13px;
+    color: black;
   }
 
   li:hover{

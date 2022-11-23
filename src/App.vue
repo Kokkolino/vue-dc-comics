@@ -30,10 +30,11 @@ export default {
     color: #2c3e50;
   }
 
-  body{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
   }
 
   .height-row{
@@ -46,7 +47,23 @@ export default {
     align-items: center;
   }
 
+  .flex-align{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .h-100{
+    height: 100%;
+  }
+
   ul{
     list-style: none;
+    display: flex;
+  }
+
+  .container-70{
+    width: 70%;
+    margin: auto;
   }
 </style>
