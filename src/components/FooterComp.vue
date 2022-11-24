@@ -83,14 +83,13 @@
     }
 
     #mainFooter{
-        height:calc(100% - $hs );
         background-image: url("../assets/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     #bottom{
-        background-color: rgb(24, 22, 22);
+        background-color: #303030ff;
         height: $hs;
         div{
             display: flex;

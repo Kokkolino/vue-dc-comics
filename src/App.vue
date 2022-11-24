@@ -29,7 +29,6 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    height: 100vh;
     width: 100%;
   }
 
@@ -76,4 +75,13 @@ export default {
     width: 70%;
     margin: auto;
   }
+
+  .blue{
+      background-color: #0282f9ff;
+    }
+  
+  .black{
+    background-color: #1c1c1cff;
+  }
+
 </style>

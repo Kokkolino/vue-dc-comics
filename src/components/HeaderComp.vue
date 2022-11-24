@@ -76,7 +76,7 @@
 
   li:hover{
     cursor: pointer;
-    color: blue;
+    color: #0282f9ff;
     .line-dec{
       display: block;
     }
@@ -90,6 +90,6 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: blue;
+    background-color: #0282f9ff;
   }
 </style>
