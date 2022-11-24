@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="mainDiv">
         <!-- main footer -->
         <section id="mainFooter">
             <div class="container-70 flex-bw f-wrap">
@@ -13,11 +13,11 @@
                         <li>Games</li>
                         <li>Videos</li>
                         <li>News</li>
-                        <ul>
-                            <h2>SHOP</h2>
-                            <li>Shop DC</li>
-                            <li>Shop DC Collectibles</li>
-                        </ul>
+                    
+                        <h2>SHOP</h2>
+                        <li>Shop DC</li>
+                        <li>Shop DC Collectibles</li>
+                        
                     </ul>
                     <ul>
                         <h2>DC</h2>
@@ -43,9 +43,9 @@
                     </ul>
 
                 </section>
-                <section id="bg-logo">
+                <div id="bg-logo">
                     
-                </section>
+                </div>
             </div>
         </section>
         <!-- bottom footer -->
@@ -55,7 +55,13 @@
                     <button>SIGN-UP NOW</button>
                 </section>
                 <section>
-                    asd
+                    <a href="#">FOLLOW US</a>
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-twitter.png" alt="">
+                    <img src="../assets/footer-youtube.png" alt="">
+                    <img src="../assets/footer-pinterest.png" alt="">
+                    <img src="../assets/footer-periscope.png" alt="">
+
                 </section>                
             </div>
         </div>
@@ -72,7 +78,7 @@
 <style scoped lang="scss">
     @import "../assets/style/var.scss"; 
 
-    div{
+    #mainDiv{
         height: calc(100% - ($hm + ($hs * 2)));
     }
 
@@ -84,19 +90,37 @@
     }
 
     #bottom{
-        position: fixed bottom;
         background-color: rgb(24, 22, 22);
         height: $hs;
         div{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100%;
             section{
-                
+
+                *{
+                    vertical-align: middle;
+                }
+
                 button{
                     padding: 15px;
                     background: none;
                     border: 2px solid blue;
+                    font-weight: bolder;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: blue;
+                    cursor: pointer;
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+
+                img{
+                    margin: 0 13px;
+                    cursor: pointer;
                 }
             }
         }
@@ -110,6 +134,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        ul{
+            margin: 0 20px;
+        }
     }
 
     li{
@@ -122,4 +149,11 @@
         cursor: pointer;
     }
 
+    #bg-logo{
+        position: relative;
+        background-image: url("../assets/dc-logo-bg.png");
+        width: 50%;
+        aspect-ratio: 1;
+        background-repeat: no-repeat ;
+    }
 </style>
