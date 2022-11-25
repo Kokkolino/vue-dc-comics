@@ -17,11 +17,14 @@
 
 <style scoped lang="scss">
 
-    $size:calc((100% / 6) - 5px);
+    $size:calc((100% / 6) - 20px);
 
     div{
         width: $size;
-        height: calc(  $size + 30px );
+        img{
+            width: 100%;
+        }
+        padding-bottom: 20px;
     }
 
 </style>
